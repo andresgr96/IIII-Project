@@ -22,10 +22,6 @@ _Download or clone from git, open in atom and mess around with the code_
 _This page will accept the users name and addres_
 * Input--> Andres Garcia, 417 S Jessup Street.
 
-_This page will display the number count from the number input_
-* Input: 12.
-* Output: 1,2,3,4,5,6,7,8,9,10,11,12.
-
 _This webpage will let the user choose between delivery and pick up_
 * Input: Delivery.
 * Output: Order Style: Deilevery.

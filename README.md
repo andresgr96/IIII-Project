@@ -37,6 +37,7 @@ _This webpage will let the user pick toppings_
 _This web page will display the order in a list of orders_
 * Input: Large pepperoni pizza for delivery.
 * Output: Order #1: 1.
+
 _This web page will display the order information when the order is clicked in the order list_
 * Input: Order number 1 clicked.
 * Output: Order number 1 info.

@@ -14,9 +14,6 @@ var Pizza = function( orderStyle, orderSize, order)
   this.price = 0;
   this.toppings = [];
 }
-Customer.prototype.information = function() {
-  return this.lastName + ", " + this.firstName;
-}
 
 Pizza.prototype.fullPrice = function () {
   this.price += (this.toppings.length * 2)
@@ -66,9 +63,7 @@ var orderNumber = 0;
 
     $(".orders").append("<li>" + "Order #" + newPizza.order + "</li>");
     $('.orders').on('click', 'li', function() {
-      $(".final-order-price").text( "Your pizza will be " + newPizza.price + "$");
-      $(".final-order-size").text( "Your ordered a " + newPizza.orderSize + " pizza.");
-      $(".final-order-toppings").text( "Your pizza will have " + newPizza.toppings + ".");
+      $(".final-order-line").text( newCustomer.firstName + " Your " + newPizza.orderSize + " pizza for " + newPizza.orderStyle+ " will be " + newPizza.price + "$ and will have: " + newPizza.toppings);
 });
 
 })

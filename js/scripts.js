@@ -64,7 +64,12 @@ var orderNumber = 0;
     newPizza.fullPrice();
 
 
-    $(".orders").append("<li>" + "order " + newPizza.order + "</li>");
+    $(".orders").append("<li>" + "Order #" + newPizza.order + "</li>");
+    $('.orders').on('click', 'li', function() {
+      $(".final-order-price").text( "Your pizza will be " + newPizza.price + "$");
+      $(".final-order-size").text( "Your ordered a " + newPizza.orderSize + " pizza.");
+      $(".final-order-toppings").text( "Your pizza will have " + newPizza.toppings + ".");
+});
 
 })
 })
